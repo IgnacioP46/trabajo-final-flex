@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family =Seymour+Uno&display=intercambio');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display =intercambiar');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-famili-global);
+}
+
+:root {
+    --font-famili-global: 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap';
+    --font-famili-head:'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family =Seymour+Uno&display=intercambio';
+    --font-famili-h2:'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display =intercambiar';
+    --color-h1: #000000;
+    --color-h2: #0000009a;
+    --color-body: #ebeaea64;
+    --color-nav: #000000;
+    --color-a: #000000;
+    --color-dropdown-content-li: rgb(0, 0, 0);
+    --color-footer: #000000;
+    --background-color-header: #0000001f;
+    --background-color-galeria: #0000002a;
+    --background-color-dropdown-content: #00000028;
+    --background-color-footer: #0000001f;
+    --background-color-dropdown-content-box-shadow: #00000076;
+    --margin-cajas: 10px;
+    --padding-cajas: 10px;
+}
+
+body {
+    font-family: var(--tex-font-family-body);
+    background-color: var(--color-body);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    width: 100%;
+    background-color: var(--background-color-header);
+    font-weight: bold;
+    font-family: var(--font-famili-head);
+}
+
+div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* aqiempieza el nav */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    list-style-type: none;
+    width: 100%;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color-dropdown-content);
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px var(--background-color-dropdown-content-box-shadow);
+    z-index: 1;
+    width: auto;
+}
+
+.dropdown-content li {
+    color: var(--color-dropdown-content-li);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-self: first baseline;
+    justify-content: space-around;
+}
+
+a {
+    color: var(--color-a);
+    text-decoration: none;
+    min-width: 24px;
+    font-weight: bold;
+}
+
+.Insta::before {
+    content: url(./assets/instagram.png);    
+}
+
+.menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* aqiempieza la galeria */
+
+section>div>img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: var(--margin-cajas);
+}
+
+h2 {
+    width: 100%;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    font-family: var(--font-famili-h2'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family =Seymour+Uno&display=intercambio');
+}
+
+.titulo-galeria {
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 350px;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    flex-grow: 1;
+    padding: 20px;
+    list-style-type: none;
+    gap: 20px;
+}
+
+/* esto es para sobre mi */
+
+#descripcion {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: left;
+    justify-self: center;
+    align-self: center;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+
+}
+
+section > p {
+    display: flex;
+    width: 400px;
+    margin-top: var(--margin-cajas);
+    padding: var(--padding-cajas);
+
+}
+
+p {
+    display: flex;
+
+}
+
+figure {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    width: max-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#foto-artita {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+figcaption {
+    display: flex;
+    font-size: 11px;
+    justify-self: center;
+}
+
+/* aqiempieza el footer */
+
+footer {
+    background-color: var(--background-color-footer);
+    color: var(--color-footer);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    width: 100%;
+    align-content: space-between;
+    flex-direction: column;
+
+}
+
+.footer-info {
+    margin: var(--margin-cajas);
+    padding: var(--padding-cajas);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* aqiempieza la parte responsif */
+
+@media screen and (max-width: 700px) {
+
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        align-content: flex-start
+    }
+    
+.footer-info {
+    display: flex;
+    align-content: flex-start;
+}
+
+#descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section>p {
+    margin-top: var(--margin-cajas);
+    display: flex;
+    justify-self: left;
+    align-self: self-start;
+    align-items: self-start;
+    justify-content: left;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+    header>nav {
+        display: none;
+    }
+
+    .dropdown-content {
+        position: static;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
